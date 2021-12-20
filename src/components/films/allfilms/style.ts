@@ -13,6 +13,10 @@ export const FilmTitle = styled.h1`
     padding:15px;
     border-radius:5px;
     cursor:pointer;
+    @media(max-width:600px){
+        inline-size:200px;
+        font-size:20px;
+    }
 `;
 export const FilmCrawl = styled.p`
     font-size:20px;
@@ -23,5 +27,6 @@ export const FilmCrawl = styled.p`
 
     @media(max-width:600px){
         inline-size:auto;
+        font-size:12px;
     }
 `;

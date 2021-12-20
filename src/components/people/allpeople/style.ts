@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const FilmContainer = styled.div`
+export const PeopçeContainer = styled.div`
     color:white;
     display:flex;
     flex-direction:column;
@@ -8,20 +8,14 @@ export const FilmContainer = styled.div`
     text-align:center;
     font-weight:bold;
 `;
-export const FilmTitle = styled.h1`
+export const PeopleName = styled.h1`
     background-color: rgba(0, 0, 0, 0.493);
+    width:500px;
     padding:15px;
     border-radius:5px;
     cursor:pointer;
-`;
-export const FilmCrawl = styled.p`
-    font-size:20px;
-    inline-size:950px;
-    background-color: rgba(0, 0, 0, 0.493);
-    padding:15px;
-    border-radius:5px;
-
     @media(max-width:600px){
-        inline-size:auto;
+        inline-size:350px;
+        font-size:30px;
     }
 `;

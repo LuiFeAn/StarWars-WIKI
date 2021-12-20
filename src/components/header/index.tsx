@@ -6,6 +6,7 @@ const Header = ()=>{
     return(
        <S.Header>
            <MenuMobile/>
+           <S.AppName>Star Wiki</S.AppName>
            <ul>
                <li><Link to={"/films/"}>Filmes</Link></li>
                <li><Link to={"/people/"}>Pessoas</Link></li>

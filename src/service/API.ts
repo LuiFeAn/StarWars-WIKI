@@ -30,7 +30,7 @@ const API = {
     people:async(id?: string)=>{
         try{
             if(id){
-                let req = await axios.get(`${people}${id}`);
+                let req = await axios.get(`${people}${id}/`);
                 let json = await req.data;
                 return json
             }

@@ -41,7 +41,14 @@ export const Header = styled.header`
         }
     }
     @media(max-width:600px){
+        flex-direction:row;
         align-items:flex-start;
         padding:5px;
+    }
+`;
+export const AppName = styled.h1`
+    display:none;
+    @media(max-width:600px){
+        display:flex;
     }
 `;

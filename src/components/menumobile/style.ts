@@ -8,7 +8,6 @@ export const MenuBar = styled.div`
     transition:1s;
     left:0px;
     gap:5px;
-    background-color:white;
     padding:10px;
     border-radius:10px;
 
@@ -17,10 +16,11 @@ export const MenuBar = styled.div`
     }
 `;
 export const MenuIcon = styled.div`
-    background-color:black;
-    width:30px;
+    background-color:white;
+    width:10px;
     transition:1s;
     height:10px;
+    border-radius:100%;
 `;
 
 export const MenuOption = styled.aside`

@@ -3,7 +3,7 @@ import * as S from './style';
 const Footer = ()=>{
     return(
         <S.Footer>
-            <h1>Feito com por Luis Fernando</h1>
+            <p>Feito com 💖 por Luis Fernando</p>
         </S.Footer>
     )
 }
