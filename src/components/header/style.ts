@@ -21,6 +21,9 @@ export const Header = styled.header`
         gap: 30px;
     
         padding:20px;
+        @media(max-width:600px){
+            display:none;
+        }
     }
     li{
         list-style:none;
@@ -36,5 +39,9 @@ export const Header = styled.header`
         &:hover{
             color:rgba(0, 0, 0, 0.452);
         }
+    }
+    @media(max-width:600px){
+        align-items:flex-start;
+        padding:5px;
     }
 `;

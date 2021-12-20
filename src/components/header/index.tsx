@@ -1,9 +1,11 @@
 import * as S from './style';
 import { Link } from 'react-router-dom';
+import MenuMobile from '../menumobile';
 
 const Header = ()=>{
     return(
        <S.Header>
+           <MenuMobile/>
            <ul>
                <li><Link to={"/films/"}>Filmes</Link></li>
                <li><Link to={"/people/"}>Pessoas</Link></li>

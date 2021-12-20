@@ -9,33 +9,56 @@ const starShips = "https://swapi.dev/api/starships/";
 const vehicles = "https://swapi.dev/api/vehicles/";
 
 const API = {
-    films:async(id:string)=>{
-        let req = await axios.get(`${films}${id}`);
-        let json = req.data;
-        return json
+    films:async(id?:string)=>{
+       
+        try{
+            if(id){
+                let req = await axios.get(`${films}${id}`);
+                let json = req.data;
+                return json
+            }
+            else{
+                let req = await axios.get(`${films}`);
+                let json = req.data;
+                return json
+            }
+        }catch(err){
+            alert(err);
+        }
 
     },
-    people:async(id: string)=>{
-        let req = await axios.get(`${people}${id}`);
-        let json = await req.data;
-        return json
+    people:async(id?: string)=>{
+        try{
+            if(id){
+                let req = await axios.get(`${people}${id}`);
+                let json = await req.data;
+                return json
+            }
+            else{
+                let req = await axios.get(`${people}`);
+                let json = await req.data;
+                return json
+            }
+        }catch(err){
+            alert(err);
+        }
     },
-    planets:async(id: string)=>{
+    planets:async(id?: string)=>{
         let req = await axios.get(`${planets}${id}`);
         let json = await req.data;
         return json;
     },
-    species:async(id:string)=>{
+    species:async(id?:string)=>{
         let req = await axios.get(`${species}${id}`);
         let json = await req.data;
         return json;
     },
-    starShips:async(id:string)=>{
+    starShips:async(id?:string)=>{
         let req = await axios.get(`${starShips}${id}`);
         let json = await req.data;
         return json;
     },
-    vehicles:async(id:string)=>{
+    vehicles:async(id?:string)=>{
         let req = await axios.get(`${vehicles}${id}`)
         let json = await req.data;
         return json;

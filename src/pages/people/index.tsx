@@ -1,12 +1,31 @@
 import * as S from './style';
 import API from '../../service/API';
-import Welcome from '../../components/home/welcome';
+import {useState,useEffect} from 'react';
+import people from '../../types/film/peopletype';
+import AllPeople from '../../components/people/allpeople';
+import Loading from '../../components/loading';
+const People = ()=>{
 
-const Home = ()=>{
+    const [people,setPeople] = useState<people[]>([]);
+    const [loading,setLoading] = useState(true);
+
+    useEffect(()=>{
+        getPeoples();
+    },[])
+
+    const getPeoples = async ()=>{
+        let json = await API.people();
+        setPeople(json.results);
+        console.log(json.results);
+        setLoading(false);
+    }
+
     return(
         <>
-            <Welcome/>
+        {loading? <Loading/> : people.map((item,index)=>(
+            <AllPeople id = {index} key = {index} name = {item.name}/>
+        ))}
         </>
     )
 }
-export default Home;
+export default People;
