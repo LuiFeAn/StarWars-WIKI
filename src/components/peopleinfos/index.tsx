@@ -41,7 +41,7 @@ const PeopleInfos = (props:Props)=>{
             <div className='eye-color'>
                  <S.PeopleEyeColorText>Cor dos olhos:</S.PeopleEyeColorText>
                  <S.PeopleEyeColor color={props.data.eye_color}/>
-            </div>
+                </div>
             <S.PeopleBrith>
                 Data de nascimento: {props.data.birth_year}
             </S.PeopleBrith>

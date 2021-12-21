@@ -6,25 +6,22 @@ export const PeopleContainer = styled.div`
     flex-direction:column;
     align-items:center;
     font-weight:bold;
-    height:750px;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
     text-align:center;
     justify-content:center;
-    background-color:rgba(0, 0, 0, 0.233);
 
     .name-and-gender{
         display:flex;
         padding:20px;
         background-color:black;
         border-radius:5px;
-        margin-top:-490px;
         text-algin:center;
-
-        @media(max-width:600px){
-            margin-top:-410px;
-        }
+        align-items:flex-start;
     }
     .eye-color{
         display:flex;
+        flex-direction:column;
+        align-items:center;
         padding:20px;
         gap:20px;
     }

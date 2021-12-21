@@ -5,7 +5,8 @@ export const LoadingContainer = styled.div`
     background-color: rgba(0, 0, 0, 0.493);
     padding:250px;
     color:white;
-    height:1000px;
+    height:800px;
+    overflow-y:hidden;
 
     @media(max-width:600px){
         padding:50px;
