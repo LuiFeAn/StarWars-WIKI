@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 
-export const PeopçeContainer = styled.div`
+export const PlanetsContainer = styled.div`
     color:white;
     display:flex;
     flex-direction:column;
     align-items:center;
-    font-weight:bold;
 `;
-export const PeopleName = styled.h1`
+export const PlanetsName = styled.h1`
     background-color: rgba(0, 0, 0, 0.493);
     width:500px;
     padding:15px;

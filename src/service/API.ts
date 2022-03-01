@@ -44,9 +44,20 @@ const API = {
         }
     },
     planets:async(id?: string)=>{
-        let req = await axios.get(`${planets}${id}`);
-        let json = await req.data;
-        return json;
+        try{
+            if(id){
+                let req = await axios.get(`${planets}${id}`);
+                let json = await req.data;
+                return json;
+            }
+            else{
+                let req = await axios.get(`${planets}`);
+                let json = await req.data;
+                return json;
+            }
+        }catch(err){
+            alert(err);
+        }
     },
     species:async(id?:string)=>{
         let req = await axios.get(`${species}${id}`);
